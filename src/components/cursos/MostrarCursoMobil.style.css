@@ -1,0 +1,140 @@
+.elige-curso-mobil-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem;
+}
+.elige-curso-mobil-container nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.elige-curso-mobil-container nav li {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-principal-600);
+  list-style: none;
+  position: relative;
+  padding: 5px 0;
+}
+
+.elige-curso-mobil-container nav li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  border-bottom: 4px solid var(--color-principal-600);
+  transition: width 0.3s ease-in-out;
+}
+
+.elige-curso-mobil-container .curso-info {
+  position: relative;
+  background-color: var(--color-principal-600);
+  border-radius: 10px;
+  box-shadow: 0 0 25px -10px var(--color-principal-600);
+  padding-inline: 28% 1rem;
+  padding-block: 2rem;
+}
+
+.elige-curso-mobil-container .curso-info img {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  top: -1rem;
+  left: -3rem;
+  z-index: 0;
+  transform: rotate(10deg);
+  filter: drop-shadow(0 0 5px var(--color-principal-300));
+}
+
+.elige-curso-mobil-container .curso-info img[alt="cafe"] {
+  top: 2rem;
+  transform: rotate(15deg);
+}
+
+.elige-curso-mobil-container h2 {
+  color: var(--color-principal-100);
+  font-size: var(--tamano-titulo);
+  margin-bottom: 1rem;
+}
+
+.elige-curso-mobil-container .curso-descripcion {
+  position: relative;
+  z-index: 1;
+}
+
+.elige-curso-mobil-container .curso-descripcion p {
+  color: var(--color-principal-100);
+  font-weight: 600;
+}
+
+@media (max-width: 420px) {
+  .elige-curso-mobil-container .curso-descripcion p {
+    font-size: 12px;
+  }
+}
+
+.elige-curso-mobil-container.mostrar .curso-info img {
+  animation: mostrarImg 0.3s ease-in-out forwards;
+}
+
+.elige-curso-mobil-container.ocultar .curso-info img {
+  animation: ocultarImg 0.3s ease-in-out;
+}
+
+.elige-curso-mobil-container.mostrar .curso-descripcion h2,
+.elige-curso-mobil-container.mostrar .curso-descripcion p {
+  animation: mostrarIten 0.3s ease forwards;
+}
+
+.elige-curso-mobil-container.ocultar .curso-descripcion h2,
+.elige-curso-mobil-container.ocultar .curso-descripcion p {
+  animation: ocultarIten 0.3s ease;
+}
+
+.elige-curso-mobil-container.mostrar nav li.active::before {
+  width: 100%;
+}
+.elige-curso-mobil-container.ocultar nav li::before {
+  width: 0%;
+}
+
+@keyframes mostrarIten {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  100% {
+  }
+}
+
+@keyframes ocultarIten {
+  0% {
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@keyframes ocultarImg {
+  0% {
+  }
+  100% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+}
+
+@keyframes mostrarImg {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  100% {
+  }
+}

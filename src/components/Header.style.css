@@ -1,0 +1,99 @@
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 997;
+  width: 100%;
+}
+
+header {
+  position: relative;
+  z-index: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 2rem;
+  background-color: var(--color-principal-600);
+  transition: all 400ms ease;
+}
+
+.nav-header-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.nav-header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  transition: transform 400ms ease;
+  background-color: #111;
+  padding: 0.2rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+header nav a,
+.nav-header a {
+  position: relative;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  transition: color 300ms ease;
+  padding: 3px 10px;
+  border-radius: 8px;
+  transition: all 300ms ease;
+}
+
+header nav a:hover {
+  background-color: #111111ef;
+  padding: 4px 15px;
+}
+
+.efecto-header nav a:hover {
+  background-color: #fff;
+  color: #111111ef;
+  padding: 4px 15px;
+}
+
+.nav-header a::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid #fff;
+  transition: all 300ms ease;
+}
+
+.nav-header a:hover::before {
+  width: 100%;
+}
+
+.efecto-header {
+  background: transparent;
+  padding: 15px 2rem;
+}
+
+.nav-header.efecto-header {
+  padding: 0;
+}
+
+.efecto-ocultar {
+  transform: translateY(-100%);
+}
+
+@media (max-width: 600px) {
+  .nav-header {
+    gap: 0.5rem;
+  }
+}

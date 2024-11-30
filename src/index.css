@@ -1,0 +1,53 @@
+:root {
+  --color-principal-50: #fcf5f4;
+  --color-principal-100: #faeae9;
+  --color-principal-200: #f5d6d7;
+  --color-principal-300: #edb4b5;
+  --color-principal-400: #e28a8e;
+  --color-principal-500: #d36067;
+  --color-principal-600: #be404f;
+  --color-principal-700: #9f3141;
+  --color-principal-800: #912f40;
+  --color-principal-900: #732837;
+  --color-principal-950: #3f121a;
+
+  --background-color: #f1f2f6;
+  --background-color-secundario: #f5d6d7;
+  --background-dark-color: #111;
+
+  --color-titulo-primario: #be404f;
+  --color-texto-primario: #e28a8e;
+
+  --tamano-titulo: 30px;
+
+  --color-fondo-tarjeta-equipo: #be404f13;
+  --color-borde-tarjeta-equipo: #be404f81;
+
+  --background-footer: #111;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.main {
+  padding: 2rem 0;
+}
+
+.main > * {
+  margin-bottom: 6rem;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,219 @@
+.elige-curso-escritorio-container {
+  position: relative;
+  width: 850px;
+  height: 400px;
+  background-color: var(--background-color);
+  border-radius: 13px;
+  overflow: hidden;
+  box-shadow: 0px 0px 30px -13px #111;
+}
+
+.pre-container {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  padding: 0 40px;
+  transition: all 0.6s ease-in-out;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.barismo-container {
+  opacity: 0;
+  z-index: 1;
+  background-image: url("../../assets/tarjeta-barismo.avif");
+}
+
+.cocteleria-container {
+  z-index: 2;
+  background-image: url("../../assets/tarjeta-cocteleria.avif");
+}
+
+.pre {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+.elige-curso-escritorio-container h1 {
+  color: #fff;
+  font-size: var(--tamano-titulo);
+}
+
+.elige-curso-escritorio-container span {
+  font-size: 12px;
+  text-shadow: 0 0 10px #111;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.elige-curso-escritorio-container p {
+  font-size: 14;
+  text-shadow: 0 0 300px #111;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+}
+
+.elige-curso-escritorio-container a.forgot {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #eee;
+  text-align: center;
+}
+
+.elige-curso-escritorio-container button {
+  border-radius: 20px;
+  border: 1px solid var(--color-principal-800);
+  background-color: var(--color-principal-600);
+  font-size: 12px;
+  padding: 12px 45px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.pre-container button {
+  margin-top: 17px;
+  transition: 80ms ease-in;
+}
+
+.pre-container button:hover {
+  background-color: var(--background-color);
+  color: var(--color-principal-600);
+}
+
+.overlay-container {
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 60%;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+}
+
+#overlayBtn {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 259px;
+  transform: translateX(-50%);
+  width: 143.67px;
+  height: 40px;
+  border: 1px solid #fff;
+  background: transparent;
+  border-radius: 20px;
+}
+
+.overlay {
+  position: relative;
+  background-color: var(--color-principal-600);
+  color: var(--color-principal-200);
+  left: -150%;
+  height: 100%;
+  width: 250%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  height: 100%;
+  width: 340px;
+  transition: 0.6s ease-in-out;
+}
+
+.overlay-left {
+  right: 60%;
+  transform: translateX(-12%);
+}
+
+.overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.overlay-panel h1 {
+  color: var(--background-color);
+}
+
+.elige-curso-escritorio-container .overlay p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 25px 0 35px;
+}
+
+.overlay-panel button {
+  border: none;
+  background: transparent;
+}
+
+.right-panel-active .overlay-container {
+  transform: translateX(-150%);
+}
+
+.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.right-panel-active .overlay-left {
+  transform: translateX(25%);
+}
+
+.right-panel-active .overlay-right {
+  transform: translateX(35%);
+}
+
+.right-panel-active .cocteleria-container {
+  transform: translateX(20%);
+  opacity: 0;
+}
+
+.right-panel-active .barismo-container {
+  transform: translateX(66.7%);
+  opacity: 1;
+  z-index: 5;
+  animation: show 0.6s;
+}
+
+@keyframes show {
+  0%,
+  50% {
+    opacity: 0;
+    z-index: 1;
+  }
+  50.1%,
+  100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+
+.btnScaled {
+  animation: scaleBtn 0.6s;
+}
+
+@keyframes scaleBtn {
+  0% {
+    width: 143.67px;
+  }
+  50% {
+    width: 250px;
+  }
+  100% {
+    width: 143.67px;
+  }
+}

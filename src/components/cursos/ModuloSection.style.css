@@ -1,0 +1,83 @@
+#modulos-section {
+  margin: 0 2rem;
+}
+
+.modulo {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  margin-bottom: 4rem;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px -13px #111;
+}
+
+.modulo .title {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--color-principal-600);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.modulo .title h2 {
+  color: var(--background-color);
+  text-align: center;
+}
+
+.modulo .duracion {
+  color: var(--background-color);
+  font-size: 12px;
+}
+
+.modulo .contenido {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  padding: 1rem 2rem;
+}
+
+.modulo .contenido table {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.modulo .contenido table thead th {
+  padding: 0.5rem;
+  color: var(--color-principal-600);
+  border-bottom: 1px solid var(--color-principal-300);
+}
+
+.modulo .contenido table tbody {
+  color: var(--color-principal-800);
+  font-size: 14px;
+}
+
+.modulo .contenido table tbody td {
+  padding: 1rem 0;
+}
+
+.modulo .contenido table th:first-child,
+.modulo .contenido table td:first-child {
+  min-width: 30%;
+}
+
+@media (max-width: 500) {
+  .modulo .contenido table tbody {
+    font-size: 10px;
+  }
+}
+
+#modulos-section.mostrar {
+  animation: mostrarInfo 0.3s ease forwards;
+}
+
+#modulos-section.ocultar {
+  animation: ocultarInfo 0.3s ease-in-out;
+}

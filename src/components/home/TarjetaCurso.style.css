@@ -1,0 +1,54 @@
+.card-curso {
+  max-width: 80%;
+  width: 300px;
+  height: auto;
+  padding: 0.7rem;
+  border-radius: 15px 30px;
+  box-shadow: 0 0 20px -10px var(--color-principal-900);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-curso img {
+  border-radius: 8px 20px;
+  width: 100%;
+  height: 178px;
+  object-fit: cover;
+}
+
+.card-curso h5 {
+  text-align: center;
+  font-size: 18px;
+  padding: 6px;
+  color: var(--color-principal-600);
+}
+
+.card-curso .descripcion {
+  text-align: center;
+  font-size: 13px;
+  color: #00000099;
+  margin-bottom: 10px;
+}
+
+.card-curso > p {
+  display: flex;
+  justify-content: end;
+}
+
+.card-curso button {
+  transition: all 300ms ease;
+  padding: 4px 18px;
+  font-size: 13px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 5px -1px var(--color-principal-600);
+  background-color: var(--color-principal-600);
+  color: #fff;
+  cursor: pointer;
+}
+
+.card-curso button:hover {
+  transform: translateY(-5px) scale(1.03);
+}

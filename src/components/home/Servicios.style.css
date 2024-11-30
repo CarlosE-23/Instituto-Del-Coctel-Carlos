@@ -1,0 +1,23 @@
+#servicios h2 {
+  text-align: center;
+  margin: 2rem 0 0.4rem 0;
+  color: var(--color-titulo-primario);
+  font-size: var(--tamano-titulo);
+}
+
+#servicios > p {
+  max-width: 700px;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--color-texto-primario);
+  font-size: 13px;
+  margin-bottom: 2rem;
+}
+
+.cursos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+}

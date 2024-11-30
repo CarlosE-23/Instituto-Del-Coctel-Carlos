@@ -1,0 +1,24 @@
+#main {
+  padding: 2rem;
+}
+
+@keyframes ocultarInfo {
+  0% {
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes mostrarInfo {
+  0% {
+    transform: translateY(30px) scale(0.8);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateY(-20px);
+  }
+  100% {
+  }
+}

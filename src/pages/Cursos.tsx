@@ -45,7 +45,7 @@ function Cursos() {
         <CursoSection
           curso={curso}
           efecto={efecto}
-          isCocteleria
+          isCocteleria={isCocteleria}
           setEfecto={setEfecto}
           setIsCocteleria={setIsCocteleria}
         />

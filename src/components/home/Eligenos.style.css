@@ -12,28 +12,36 @@
 }
 
 .razones > div {
-  max-width: 300px;
+  max-width: 500px;
   flex-grow: 1;
 }
 
 #eligenos h2 {
   margin-bottom: 1em;
-  font-size: var(--tamano-titulo);
   color: var(--color-principal-900);
 }
 
-#eligenos .number {
-  width: 55px;
-  height: 55px;
-  display: flex;
+#eligenos .number-container {
+  position: relative;
+  display: inline-flex;
   justify-content: center;
-  align-items: center;
-  border-radius: 100%;
   margin: 0 auto;
-  border: 3px solid var(--color-principal-400);
   color: var(--color-principal-600);
   margin-bottom: 1rem;
-  font-size: 25px;
+  padding: 30px;
+}
+
+#eligenos .number-container::before {
+  position: absolute;
+  aspect-ratio: 1/1;
+  content: "";
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+  border: 3px solid var(--color-principal-400);
 }
 
 #eligenos .razon {
@@ -42,6 +50,23 @@
 }
 
 #eligenos p {
-  font-size: 12px;
   color: var(--color-principal-900);
+}
+
+@media (max-width: 1600px) {
+  .razones > div {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .razones > div {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .razones > div {
+    max-width: 260px;
+  }
 }

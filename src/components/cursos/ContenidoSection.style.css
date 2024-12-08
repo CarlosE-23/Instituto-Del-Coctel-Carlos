@@ -8,13 +8,13 @@
 }
 
 #contenido-section > div {
-  max-width: 300px;
+  flex: 1;
+  min-width: 150px;
 }
 
 #contenido-section p {
   color: var(--color-texto-primario);
   margin-bottom: 10px;
-  font-size: 15px;
 }
 
 #contenido-section h2 {

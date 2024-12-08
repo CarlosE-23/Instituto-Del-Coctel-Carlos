@@ -1,4 +1,4 @@
-#main {
+.main {
   padding: 2rem;
 }
 
@@ -20,5 +20,11 @@
     transform: translateY(-20px);
   }
   100% {
+  }
+}
+
+@media (max-width: 360px) {
+  .main {
+    padding: 2rem 0.5rem;
   }
 }

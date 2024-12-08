@@ -1,6 +1,6 @@
 .card-curso {
-  max-width: 80%;
-  width: 300px;
+  max-width: 40%;
+  flex-grow: 1;
   height: auto;
   padding: 0.7rem;
   border-radius: 15px 30px;
@@ -13,20 +13,18 @@
 .card-curso img {
   border-radius: 8px 20px;
   width: 100%;
-  height: 178px;
+  aspect-ratio: 4/2;
   object-fit: cover;
 }
 
 .card-curso h5 {
   text-align: center;
-  font-size: 18px;
   padding: 6px;
   color: var(--color-principal-600);
 }
 
 .card-curso .descripcion {
   text-align: center;
-  font-size: 13px;
   color: #00000099;
   margin-bottom: 10px;
 }
@@ -39,7 +37,6 @@
 .card-curso button {
   transition: all 300ms ease;
   padding: 4px 18px;
-  font-size: 13px;
   border-radius: 5px;
   outline: none;
   border: none;
@@ -51,4 +48,10 @@
 
 .card-curso button:hover {
   transform: translateY(-5px) scale(1.03);
+}
+
+@media (max-width: 730px) {
+  .card-curso {
+    max-width: 80%;
+  }
 }

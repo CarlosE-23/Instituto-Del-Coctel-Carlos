@@ -4,8 +4,8 @@ function Nosotros() {
   return (
     <section id="sobre-nosotros">
       <div className="nosotros-texto">
-        <h2>Sobre nosotros</h2>
-        <p>
+        <h2 className="titulo">Sobre nosotros</h2>
+        <p className="texto-primario">
           En el Instituto del Cóctel Carlos, somos un grupo apasionado de
           expertos en coctelería y barismo dedicados a compartir nuestro amor
           por las bebidas y la cultura que las rodea. Fundado con la visión de
@@ -14,10 +14,12 @@ function Nosotros() {
           aficionados en el mundo de las bebidas.
         </p>
       </div>
-      <img
-        src="https://haciendasantateresa.com.ve/wp-content/uploads/2024/01/LO100097.jpg"
-        alt="Nosotros"
-      />
+      <div className="img-container">
+        <img
+          src="https://haciendasantateresa.com.ve/wp-content/uploads/2024/01/LO100097.jpg"
+          alt="Nosotros"
+        />
+      </div>
     </section>
   );
 }

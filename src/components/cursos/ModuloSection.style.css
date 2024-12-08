@@ -30,7 +30,6 @@
 
 .modulo .duracion {
   color: var(--background-color);
-  font-size: 12px;
 }
 
 .modulo .contenido {
@@ -56,7 +55,6 @@
 
 .modulo .contenido table tbody {
   color: var(--color-principal-800);
-  font-size: 14px;
 }
 
 .modulo .contenido table tbody td {
@@ -68,9 +66,13 @@
   min-width: 30%;
 }
 
-@media (max-width: 500) {
-  .modulo .contenido table tbody {
-    font-size: 10px;
+@media (max-width: 500px) {
+  #modulos-section {
+    margin: 0 1rem;
+  }
+
+  .modulo .contenido {
+    padding: 1rem 0.5rem;
   }
 }
 

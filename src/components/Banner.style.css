@@ -26,19 +26,23 @@
   opacity: 0.4;
 }
 
-.banner .titulo {
+.banner .titulo-container {
   color: #fff;
   text-align: center;
   position: relative;
 }
 
-.banner .titulo i {
+.banner .titulo-container h1 {
+  font-size: var(--tamano-titulo-banner);
+}
+
+.banner .titulo-container i {
   font-size: 12px;
 }
 
 .extra {
   position: absolute;
-  max-width: 800px;
+  max-width: 1300px;
   min-width: 280px;
   width: 80%;
   background-color: #fff;

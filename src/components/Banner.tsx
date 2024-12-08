@@ -3,7 +3,7 @@ import "./Banner.style.css";
 function HomeBanner() {
   return (
     <div className="banner">
-      <div className="titulo">
+      <div className="titulo-container">
         <h1>CURSOS DE BARTENDER Y BARISTA</h1>
         <p>
           <i>Transforma tu pasión en profesión</i>

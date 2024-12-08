@@ -4,22 +4,22 @@ import { Link } from "react-router-dom";
 
 type TProps = {
   curso: TCurso;
-  imgSrc: string;
+  img: string;
   url: string;
 };
 
 function TargetaCurso(props: TProps) {
-  const { curso, imgSrc, url } = props;
+  const { curso, img, url } = props;
   return (
     <article className="card-curso">
       <div>
-        <img src={imgSrc} alt="Imagen de referencia" />
-        <h5>{curso.nombre}</h5>
-        <p className="descripcion">{curso.descripcion}</p>
+        <img src={img} alt="Imagen de referencia" />
+        <h5 className="titulo-secundario">{curso.nombre}</h5>
+        <p className="descripcion texto">{curso.descripcion}</p>
       </div>
       <p>
         <Link to={url}>
-          <button>Más</button>
+          <button className="texto">Más</button>
         </Link>
       </p>
     </article>

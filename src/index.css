@@ -18,7 +18,12 @@
   --color-titulo-primario: #be404f;
   --color-texto-primario: #e28a8e;
 
-  --tamano-titulo: 30px;
+  --tamano-titulo-banner: clamp(2.5rem, 2.188rem + 1.348vw, 4rem);
+  --tamano-titulo: clamp(1.7rem, 1.326rem + 1vw, 3.5rem);
+  --tamano-titulo-2: clamp(1.3rem, 1.051rem + 0.579vw, 2.5rem);
+
+  --tamano-texto: clamp(1rem, 0.834rem + 0.319vw, 1.8rem);
+  --tamano-texto-nav: clamp(0.9rem, 0.361rem + 0.773vw, 1.4rem);
 
   --color-fondo-tarjeta-equipo: #be404f13;
   --color-borde-tarjeta-equipo: #be404f81;
@@ -50,4 +55,20 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.titulo {
+  font-size: var(--tamano-titulo);
+}
+
+.titulo-secundario {
+  font-size: var(--tamano-titulo-2);
+}
+
+.texto-primario {
+  font-size: var(--tamano-texto);
+}
+
+.texto-nav {
+  font-size: var(--tamano-texto-nav);
 }

@@ -37,6 +37,7 @@ function NavHeader(props: TProps) {
       >
         {searchElements.map((el) => (
           <a
+            className="texto-nav"
             href={el.title}
             data-direction={el.direction}
             key={el.title}

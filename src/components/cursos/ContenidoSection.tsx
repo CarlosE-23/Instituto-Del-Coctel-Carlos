@@ -12,21 +12,27 @@ function ContenidoSection(props: TProps) {
   return (
     <section id="contenido-section" className={`${efecto}`}>
       <div className="objetivos">
-        <h2>Objetivos</h2>
+        <h2 className="titulo-secundario">Objetivos</h2>
         {objetivos.map((el) => (
-          <p key={crypto.randomUUID()}>{el}</p>
+          <p className="texto-primario" key={crypto.randomUUID()}>
+            {el}
+          </p>
         ))}
       </div>
       <div className="beneficios">
-        <h2>Beneficios</h2>
+        <h2 className="titulo-secundario">Beneficios</h2>
         {beneficios.map((el) => (
-          <p key={crypto.randomUUID()}>{el}</p>
+          <p className="texto-primario" key={crypto.randomUUID()}>
+            {el}
+          </p>
         ))}
       </div>
       <div className="salidas-laborales">
-        <h2>Salidas Laborales</h2>
+        <h2 className="titulo-secundario">Salidas Laborales</h2>
         {salidasLaborales.map((el) => (
-          <p key={crypto.randomUUID()}>{el}</p>
+          <p className="texto-primario" key={crypto.randomUUID()}>
+            {el}
+          </p>
         ))}
       </div>
     </section>

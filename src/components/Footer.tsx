@@ -11,7 +11,7 @@ function Footer() {
       </div>
       <div className="info">
         <p>
-          <span>Pagina elavorada por Carlos Guanipa </span>
+          <span>Pagina elaborada por Carlos Guanipa </span>
           <a href="https://github.com/CarlosE-23" target="_blank">
             <FaGithub size={15} className="social-icon" />
             <span>github.com/CarlosE-23</span>

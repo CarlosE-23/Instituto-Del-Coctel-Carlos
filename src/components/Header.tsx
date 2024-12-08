@@ -35,7 +35,7 @@ function Header(props: TProps) {
     <div className="header-container">
       <header className={`${efectoHeader && "efecto-header"}`}>
         <TbCircleLetterC size={30} color="#f1f2f6" />
-        <nav>
+        <nav className="texto-nav">
           <NavLink to="/">Inicio</NavLink>{" "}
           <NavLink to="/cursos">Cursos</NavLink>
         </nav>

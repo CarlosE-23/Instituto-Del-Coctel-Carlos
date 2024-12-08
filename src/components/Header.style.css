@@ -45,7 +45,6 @@ header nav a,
 .nav-header a {
   position: relative;
   color: #fff;
-  font-size: 13px;
   font-weight: 700;
   transition: color 300ms ease;
   padding: 3px 10px;
